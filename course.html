@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!--============================================================================================--> 
+
+<title>code.berlin Summer School Python Course</title>
+<header>code.berlin Summer School Python Course</header>
+<footer>Fabio Fracassi, code.berlin</footer>
+
+<section>
+    <h1>Welcome!</h1>
+</section>
+
+<section>
+    <h1>Python Course</h1>
+    <p>code.berlin Summer School</p>
+</section>
+
+<section><h2>Goals</h2>
+    <ul>
+        <li>Teach you the basics of Programming</li>
+        <li>Enable you to ...
+            <ul>
+                <li>... learn more on your own</li>
+                <li>... do simple programming tasks</li>
+                <li>... fill the SE role in the Orientation semester</li>
+                <li>... understand the progamming way of thinking</li>
+                <li>... follow more advanced talks</li>
+            </ul></li>
+    </ul>
+</section>
+
+<section><h2>Non Goals</h2>
+    <ul>
+        <li>Test you</li>
+        <li>Teach you <b>all</b> the basics of Programming</li>
+        <li>Get through a fixed amount of material
+            <ul><li>it is more important not to loose you</li></ul>
+        </li>
+    </ul>
+</section>
+
+<section><h2>Psychology</h2>
+    <ul>
+        <li>Programming is in essence a way of thinking</li>
+        <li>Learning a new way of thinking is not easy</li>
+        <li>Being told that your way of thinking is wrong can hurt
+            <ul><li>Perspective: this is not an attack of your personality</li></ul>
+        </li>
+        <li>Computers will persistently point out even tiny Errors
+            <ul><li><b>Extremly frustrating</b></li>
+                <li>Perspective: there is no malice involved</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section><h2>Why Python</h2>
+    <ul>
+        <li>One of the most popular languages<br/>
+            <div class="reveal">Favourite Language for many scientific and industry fields</div>
+            <ul><li>Machine Learning</li>
+                <li>Data Visualisation</li>
+            </ul>
+        </li>
+        <li>Immediately useful in "the real world"
+            <ul><li>scripting</li>
+                <li>task automation</li>
+                <li>helpers/tools</li>
+            </ul>
+        </li>        
+        <li>well suited for beginners
+            <ul><li>distraction free</li>
+                <li>fairly consistent</li>
+                <li>modern paradigms/ideoms</li>
+                <li>clean syntax, principled semantics</li>
+            </ul>
+        </li>                
+    </ul>
+</section>
+
+<section><h2>Why not:</h2>
+    <ul>
+        <li>Javascript
+            <ul><li>You will learn it anyway</li></ul></li>
+        <li>Ruby
+            <ul><li>very similar to python, but not used as much</li></ul></li>
+        <li>C++
+            <ul><li>easier once you know a bit about programming</li></ul></li>
+        <li>C, Pascal, Basic
+            <ul><li>Outdated</li></ul></li>
+        <li>Java, C#</li>
+        <li>Rust, Swift</li>
+        <li>Haskell, Elexir, Scala, Clojure, ...</li>
+        <li>...</li>
+    </ul>
+</section>
+
+<section><h1>How:</h1>
+    Udacity Course "Intro to Computer Science" (CS101)<br/>
+    https://classroom.udacity.com/courses/cs101/
+</section>
+
+<section><h2>Why</h2>
+    <ul>
+        <li>Everyone can learn at their own pace</li>
+        <li>Interesting exercises</li>
+        <li>Explains a few important concepts besides programming</li>
+    </ul>
+</section>
+
+<section><h2>A few notes</h2>
+    <ul>
+        <li>No "Magic" approach</li>
+        <li>You'll implement a lot of stuff manually
+            <ul><li>It is all about <b>understanding</b> how programming works</li>
+                <li>Not about getting the thing done</li>
+                <li>google will probably give you a solution that you could copy
+                    <br/><b>Please don't do that!</b>
+                </li>
+                <li>there is probably a solution in the pyton standard library</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section><h2>Caveat:</h2>
+    <ul>
+        <li>The Udacity material still uses Python 2</li>
+        <li>On your machines you have Python 3</li>
+    </ul>
+    <div class='reveal'><pre title="Python 2"><code class='python'><xmp>
+        a = 10 / 4  # a will be 2
+        b = 8 / 4   # b will be 2 
+        print "The course will show you the Python 2 way", a, b
+        num = 3
+        print num
+        s = "The course will show this"
+        print s.find("show", num)
+    </xmp></code></pre></div>
+    <div class='reveal'><pre title="Python 3"><code class='python'><xmp>
+        a = 10 / 4  # a will be 2.5
+        b = 8 / 4   # b will be 2 
+        print ( "But you should prefer the Python 3 way!", a, b )
+        num = 3
+        print (num)
+        s = "The course will show this"
+        print (s.find("show", num))
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>What to do when Errors occur</h2>
+    <ul>
+        <li>Don't Panic!</li>
+        <li>Do not randomly change things in your program until it (seems to) work.</li>
+        <li>try to reason about what went wrong.</li>
+        <li>using the reason above, what would you have to do to correct that?</li>
+        <li>try your hypothesis.</li>
+        <li>If it works -> Yay!</li>
+        <ul><li>Do you understand why it works now?</li></ul>
+        <li>If it does not: </li>
+        <ul><li>Start again from 'Don't Panic!'</li></ul>
+    </ul>
+</section>
+
+<section><h2>How:</h2>
+    <ul>
+        <li>Sign in to Udacity, enroll to the CS101 course</li>
+        <li>Watch the Video Lessons
+            <ul><li>(and/or) read the transcripts</li>
+            <li><b>You are welcome to form groups</b></li></ul></li>
+        <li>Do the exercises/quizes!
+            <ul><li><b>Groups are ok, but make sure to engage and understand</b></li></ul></li>
+        <li><b>Ask us for explanations, comments, help at ANY TIME!</b>
+            <ul><li>That is why we are here!</li></ul></li>
+        <li>We meet every 2ish hours, to syncronize, discuss, and have a break</li>
+        <li>There will be a bit of lessons for material the course does not cover</li>
+    </ul>
+</section>
+
+<section><h2>What exactly?</h2>
+    <table style="width:100%">
+            <tr><th>Lesson #</th><th>Unit/Chapter</th><th>Action</th></tr>
+            <tr><td>1</td><td>1</td><td>watch</td></tr>
+            <tr><td>2</td><td>1</td><td>do exercise</td></tr>
+            <tr><td>3</td><td>1</td><td>optional</td></tr>
+            <tr><td>3.5</td><td>1</td><td>Attention answers are differnt in Python 3</td></tr>
+            <tr><td>4</td><td>1</td><td>watch</td></tr>
+            <tr><td>---</td><td>---</td><td>Let's Meet</td></tr>
+            <tr><td>5</td><td>2</td><td>watch</td></tr>
+            <tr><td>6</td><td>2</td><td>do exercise</td></tr>
+            <tr><td>7</td><td>2</td><td>optional</td></tr>
+            <tr><td>8</td><td>2</td><td>optional</td></tr>
+            <tr><td>9</td><td>2</td><td>watch</td></tr>
+            <tr><td>---</td><td>---</td><td>Let's Meet</td></tr>
+            <tr><td>10</td><td>-</td><td>watch</td></tr>
+            <tr><td>11</td><td>3</td><td>do exercise</td></tr>
+            <tr><td>12</td><td>3</td><td>optional</td></tr>
+            <tr><td>13</td><td>3</td><td>optional</td></tr>
+            <tr><td>14</td><td>3</td><td>watch</td></tr>
+            <tr><td>---</td><td>---</td><td>Let's Meet</td></tr>
+            <tr><td>15.1-6</td><td>4</td><td>watch</td></tr>
+            <tr><td>15.8-21</td><td>4</td><td>skip</td></tr>
+            <tr><td>16</td><td>4</td><td>do exercise</td></tr>
+            <tr><td>17</td><td>4</td><td>optional</td></tr>
+            <tr><td>---</td><td>---</td><td>Let's Meet</td></tr>
+            <tr><td>18</td><td>5</td><td>watch</td></tr>
+            <tr><td>19-21</td><td>5</td><td>optional</td></tr>
+            <tr><td>---</td><td>---</td><td>Let's Meet</td></tr>
+        </table>
+</section>
+
+<section><h2>Notes:</h2>
+    <ul>
+        <li>Do larger exercises locally on your computer
+                <ul><li>Fork https://github.com/code-uni-workshops/python-intro</li></ul>
+        </li>
+  
+        <li>There is reading material in the sidebar</li>
+        <li>Have a Break!</li>
+    </ul>
+</section>
+
+
+<section>
+    <h1>Lesson: Scopes, Functions &amp; Classes</h1>
+</section>
+
+<section><h2>Recap</h2>    
+    <div class='reveal'><pre><code class='python'><xmp>
+            def move_to(x, y, z):  // (*)
+                print( "moved to ", x, y, z)
+            
+            move_to(1, 2, 3)    # moved to 1, 2, 3 
+            move_to(0, 0, 0)    # moved to 0, 0, 0        
+            move_to(1, 2, 0)    # moved to 1, 2, 0  
+
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>Default parameters</h2>    
+    <div class='reveal'><pre><code class='python'><xmp>
+            def move_to(x = 0, y = 0, z = 0):  // (*)
+                print( "moved to ", x, y, z)
+            
+            move_to(1, 2, 3)    # moved to 1, 2, 3  // (*)
+
+            move_to(0, 0, 0)    # moved to 0, 0, 0  // (*)
+            move_to(0, 0)       # moved to 0, 0, 0
+            move_to(0)          # moved to 0, 0, 0
+            
+            move_to(1, 2, 0)    # moved to 1, 2, 0  // (*)
+            move_to(1, 2)       # moved to 1, 2, 0
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>Default parameters</h2>      
+    <div class='reveal'><pre><code class='python'><xmp>
+        s = "all zip files are zipped" 
+        print (s.find("zip"))       // (*)
+        print (s.find("zip", 0))    // (*)
+        print (s.find("zip", 6))
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>Named parameters</h2>    
+    <div class='reveal'><pre><code class='python'><xmp>
+        def move_to(x = 0, y = 0, z = 0): // (*)
+            print( "moved to ", x, y, z)
+            
+            move_to(1, 2, 3)        # moved to 1, 2, 3
+
+            move_to(x = 1, z = 3)   # moved to 1, 0, 3  // (*)
+            move_to(z = 1, y = 3)   # moved to 0, 3, 1    
+    </xmp></code></pre></div>   
+</section>
+
+<section><h2>Scopes</h2>
+    <p class="quote" data-source="wikipedia"><b>Scope:</b> 
+        The region of a computer program where a name-binding is valid</p>
+
+    <div class='reveal'><pre><code class='python'><xmp>
+        # File starts here 
+
+        # print(a)          // (*) 
+        a = 42              // (*)
+        print("a =", a)     // (*)
+    </xmp></code></pre>
+    <p class="code-note"></p>
+    <p class="code-note">Can't do that, <var>a</var> is not in scope</p>
+    <p class="code-note">Now we defined <var>a</var></p>
+    <p class="code-note"><var>a</var> is in scope</p>
+    </div>
+</section>
+
+<section><h2>Scopes</h2>
+    <div class='reveal'><pre class='donot'><code class='python'><xmp>
+        a = # some value we do not know
+        if(a < 10):
+            b = 100
+        print ( "To b or not to b?", b ) // (*)
+    </xmp></code></pre>
+    <p class="code-note">Good idea? 
+        <div class="reveal"> No, <var>b</var> might or might not be in scope</div></p>
+    </div>
+</section>
+
+<section><h2>A question of style</h2>
+    <div class='side-by-side'>
+        <div><pre class='do' title="--- A ---"><code class='python'><xmp>
+                a = 1
+                if (b == 42):
+                    a = 2
+        </xmp></code></pre></div>
+        <div class='reveal'><pre class='do' title="--- B ---"><code class='python'><xmp>
+                if (b == 42):
+                    a = 2
+                else:
+                    a = 1
+        </xmp></code></pre></div>
+    </div>
+    <p class="reveal">It depends:</p>
+    <div class='side-by-side'>
+            <div class='reveal'><pre class='do' title="default with exceptions"><code class='python'><xmp>
+                    race = "Human"             
+                    if (name == "The Doctor"):
+                        race = "Time Lord"
+            </xmp></code></pre></div>
+            <div class='reveal'><pre class='do' title="equaly likely"><code class='python'><xmp>
+                    if (wants_to_start):
+                        color = "White"
+                    else:
+                        color = "Black"
+            </xmp></code></pre></div>
+        </div>
+</section>
+
+
+<section><h2>Local Scopes</h2>
+    <div><pre><code class='python'><xmp>
+        a = 5
+
+        def a_function():
+            b = 10
+            print(a)  // (*)
+            print(b)  // (*)
+
+        a_function()
+        print(a)      // (*)
+        #print(b)     // (*)
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>Local Scopes</h2>
+    <div class='reveal'><pre><code class='python'><xmp>
+        a = 5   // (*)
+
+        def a_function():
+            a = 10      // (*)
+            print(a)    // (*)
+        
+        a_function()
+        print(a)        // (*)
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>mixing scopes</h2>    
+    <div class='reveal'><pre class='donot'><code class='python'><xmp>
+            a = 5
+    
+            def a_function():
+                print(a)  // (*)
+                a = 10
+                print(a)
+    
+            a_function()
+            print(a)
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>Global Scope</h2>    
+    <div class='reveal'><pre title='Yes - No - Maybe - I dont know'><code class='python'><xmp>
+            a = 5
+    
+            def a_function():
+                global a  // (*)
+                print(a)  // (*)
+                a = 10
+                print(a)
+    
+            a_function()
+            print(a)      // (*)
+    </xmp></code></pre></div>
+</section>
+
+<section><h2>File Scope</h2>    
+    <div class='reveal'><pre title='file.py'><code class='python'><xmp>
+            a = 10
+    
+            def function():
+                print(a)
+    
+            function()
+            print(a)
+    </xmp></code></pre></div>
+
+    <div class='reveal'><pre title='main.py'><code class='python'><xmp>
+        import file
+        a = 5
+
+        file.function()
+        print(a)
+    </xmp></code></pre></div>    
+</section>
+
+<section><h2>Class scope</h2>    
+    <div class='reveal'><pre><code class='python'><xmp>
+        class date:
+            year = 1900
+            month = 1
+            day = 1
+
+            def as_iso(self):
+                return str(self.year) + "-" + str(self.month) + "-" + str(self.day)
+
+            def is_valid(self):
+                # ...
+                return false
+
+
+        today = date()
+        today.year, today.month, today.day = 2018, 8, 13
+        print (today.as_iso())
+    </xmp></code></pre></div>  
+</section>
+
+<section><h2>Initializer</h2>    
+    <div class='reveal'><pre><code class='python'><xmp>
+        class date:
+            def __init__(self, y=1900, m=1, d=1):
+                self.year = y
+                self.month = m
+                self.day = d
+        
+            def as_iso(self):
+                return str(self.year) + "-" + str(self.month) + "-" + str(self.day)
+        
+            def is_valid(self):
+                # ...
+                return False
+        
+        
+        today = date(2018, 8, 13)
+        print(today.as_iso())
+    </xmp></code></pre></div>  
+</section>
+
+<section><h1>Unit Tests</h1>    
+</section>
+
+<section><h2>get the code</h2>    
+    <p>https://help.github.com/articles/syncing-a-fork/</p>
+</section>
+
+
+<section>
+    <h1>Thank You!</h1>
+    <p>Fabio Fracassi
+    <br/>fabio.fracassi@code.berlin</p>
+</section>
+
+<!--============================================================================================--> 
+<style type="text/css">
+/*-----------------------------------------------------------------------------------------------*/
+/* Color Theme */
+
+:root           {   --text-color: #1a2a2a;
+                    --text-color-sub: #5a6a6a;
+                    /*--background: linear-gradient(#c8c4c8, #e8e4e8);*/
+                    --background: linear-gradient(#e8e4e8, #f2e8f2);
+                    --highlight-color: rgba(133, 45, 133, 0.5);
+                    --title-background: linear-gradient(rgba(112, 21, 112, 1.0), #250025);
+                    --title-text-color: white;
+                    --code-text-color: #536466;
+                    --code-keyword-color: #533436;
+                    --code-string-color: #43a456;
+                    --code-comment-color: #93a4a6;
+                    --code-background: #fdf6e3;
+                    --code-background2: #ede6d3;
+                    --border-text-color: white;
+                    --border-background: black;
+                    --normal-font: 'Roboto', Verdana, sans-serif;
+                    --code-font: 'Monoid', 'Courier New', monospace;
+                    /*--load-font: "Roboto:300italic,300,400italic,400";*/
+                }
+
+/*-----------------------------------------------------------------------------------------------*/
+/*
+
+
+
+    CodeSlides (c) 2017,2018 Fabio Fracassi
+
+
+                                                                                                 */
+/*-----------------------------------------------------------------------------------------------*/
+/* Style */
+
+*               {   box-sizing: border-box; } 
+html            {   margin: 0; padding: 0; overflow: hidden; 
+                    font-family: var(--normal-font);
+                    font-weight: 300;
+                }
+body            {   background: var(--background); color: var(--text-color); 
+                    margin: 0; padding: 0; overflow: hidden;
+                    display: flex; flex-direction: column;
+                }
+header          {   background: var(--border-background); color: var(--border-text-color); 
+                    width: 100%; order: 1;  padding-left: 10px; padding-right: 10px;
+                }
+#canvas         {   order:2; width: 100vw; height: 100vh; 
+                    overflow-y: scroll; overflow-x: hidden; padding: 0%; margin: 0; font-size: 2em;
+                }
+footer          {   background: var(--border-background); color: var(--border-text-color); 
+                    position: absolute; bottom: 0; width: 100%; padding-left: 10px; padding-right: 10px;
+                    flex-direction: row; display: flex; 
+                }
+#__internal_footer_text
+                {   text-align: left;  order: 1; flex-grow: 4; }
+#__internal_time
+                {   text-align: right; order: 2; flex-grow: 1; }
+
+#__internal_page_number
+                {   text-align: right; order: 3; flex-grow: 1; }
+
+/*************************************************************************************************/
+h1              {   background: var(--title-background); color: var(--title-text-color); 
+                    height: 45%; padding: 2%; margin: 0; margin-bottom: 1%;
+                    display: flex; justify-content: flex-end; align-items: flex-end;
+                    font-size: 3em;
+}
+h2              {   background: var(--title-background); color: var(--title-text-color); 
+                    height: 20%; padding: 2%; margin: 0; margin-bottom: 1%;
+                    display: flex; justify-content: flex-start; align-items:  flex-end;
+                    font-size: 2em;
+                }
+h3, h4          {   background: var(--title-background); color: var(--title-text-color);  margin: 0; }
+/*************************************************************************************************/
+ul, ol          {   list-style-position: inside; padding-left: 3%; }
+li.hidden       {   visibility: hidden; }
+li.shadow       {   color: var(--text-color-sub); }
+li.current      {   color: var(--text-color); }
+/* fix for chrome */
+ul              {  list-style-type: none; }
+ul > li         {  position: relative;  padding-left: 1.5em; }
+ul > li:before  {  content: "•"; position: absolute; left: 0; }
+/* end fix for chrome */
+p               {   padding-left: 2%; width: 100%; }
+p.code-note     {   margin: 2%; margin-top: 0; width: 96%; 
+                    background-color: white; border-radius: 5px; z-index: 2; 
+                }
+p.small         {   margin: 0; width: 100%; }
+span            {   width: 100%; }
+.quote          {   background-color: #f6f6f6; border-radius: 5px; }
+img             {   margin: 2%; border-radius: 5px; width: 94% }
+div.reveal      {   margin: 0; padding: 0; width: 100%; }
+div.fp > p.code-note 
+                {   margin: 2%; margin-top: -3%; width: 96%; 
+                    background-color: white; border-radius: 5px; z-index: 2; 
+                } 
+table           {   width: 96%; }
+th              {   background: var(--title-background); color: var(--title-text-color);
+                }
+td              {   background-color: white;
+                }
+
+/*************************************************************************************************/
+span.__ch_ln    {   font-size: 0.65em; 
+                    margin: -10px 5px 0 -15px;
+                    padding: 0; padding-right: 15px;
+                    background-color: var(--code-background2);
+                    border-color: var(--code-background2);
+                    color: var(--code-comment-color);
+                    border-style: solid; 
+                    border-width: 10px 0 25px 25px;
+                    position: relative;
+                    user-select: none;
+                    cursor: default;
+                } 
+[data-chln]::after {
+  content: attr(data-chln);
+}
+span.__ch_comment 
+                {   color: var(--code-comment-color);
+                }
+span.__ch_string 
+                {   color: var(--code-string-color);
+                }
+span.__ch_keyword
+                {   color: var(--code-keyword-color);
+                    font-weight: bold;
+                }
+span.__ch_preproc
+                {   color: #533436;
+                }
+span.__ch_preproc_param
+                {   color: #333436;
+                }
+span.__ch_inc_file
+                {   color: var(--code-string-color);
+                }
+
+/*************************************************************************************************/                
+legend          {   visibility: hidden; position: fixed; }
+.__internal_code
+                {   margin-left: 0px; margin-right:3px; margin-bottom: 3px; 
+                    background-color: var(--code-background); color: var(--code-text-color);
+                    border-color: var(--text-color); border-style: solid; 
+                    border-width: 1px; border-radius: 5px;
+                    /*font-family: var(--code-font);*/
+                    height:  93%; /* I don't know why this works but the correct calc(100% - 1.5em -3px) doesn't */
+                    overflow:auto; 
+
+                }
+pre             {   font-size: 0.5em;
+                    margin-top: 0px; margin-left: 2%; margin-right:2%;
+                    padding-top: 3px; padding-left: 5px; padding-bottom: 3px; padding-right: 5px;
+                    border-radius: 5px; /*border-color: #206020; border-style: solid; border-width: 1px;*/
+                    /*padding: 2px; */
+                    transition: all 0.5s ease;
+                }
+pre > *         {   font-size: 2em; padding:5px; }
+pre#zoomed      {   position: absolute; left:3%; top:3%; width: 94%; height: 94%;
+                    font-size: 0.75em; 
+                    transition: all 0.5s ease;
+                }
+pre code        {}
+var             {   font-family: monospace; font-style: normal; }
+xmp             {   margin: 0; }
+.side-by-side   {   display: flex; flex-direction: row; margin-left: 1%; margin-right: 1%; width: 94vw; }
+.side-by-side > * { flex-grow: 1; flex-shrink: 1; flex-basis: 40%; width: 50%;}
+.do             {   background-color: #ddf6dd;
+                    margin-top: 0; margin-bottom: 0; margin-left: 1%; margin-right: 1%;
+                    border-color: #206020; color: #206020; border-style: solid; border-width: 1px;
+                }
+.donot          {   background-color: #f6dddd;
+                    margin-top: 0; margin-bottom: 0; margin-left: 1%; margin-right: 1%; 
+                    border-color: #602020; color: #602020; border-style: solid; border-width: 1px;
+                }
+.__internal_normal_code
+                {   background-color: #c2c2c2; border-color: var(--text-color); color: var(--text-color);
+                    border-style: solid; border-width: 1px;
+                }
+#__internal_code_highlight_line
+                {   position: absolute; z-index: 1; height: 1em; 
+                    background-color: var(--highlight-color); border-radius: 5px;
+                }
+/*************************************************************************************************/
+#__internal_ruler
+                {   position: fixed; visibility: hidden; height: auto; width: auto; white-space: nowrap; 
+                }
+</style>
+
+<!--============================================================================================--> 
+
+<noscript> 
+    <h1>CodeSlides needs Javascript to work!</h1>
+</noscript>
+<script type="text/javascript">
+ 
+    //--- Compatibility bullshit ------------------------------------------------------------------
+    function isFullScreen() {
+        return  (  document.fullScreenElement && document.fullScreenElement !== null) 
+                || document.mozFullScreen || document.webkitIsFullScreen;
+    }
+
+    function requestFullScreen(element) {
+        if (element.requestFullscreen)              element.requestFullscreen();
+        else if (element.msRequestFullscreen)       element.msRequestFullscreen();
+        else if (element.mozRequestFullScreen)      element.mozRequestFullScreen();
+        else if (element.webkitRequestFullscreen)   element.webkitRequestFullscreen();
+    }
+
+    function exitFullScreen() {
+        if (document.exitFullscreen)                document.exitFullscreen();
+        else if (document.msExitFullscreen)         document.msExitFullscreen();
+        else if (document.mozCancelFullScreen)      document.mozCancelFullScreen();
+        else if (document.webkitExitFullscreen)     document.webkitExitFullscreen();
+    }
+
+    //---------------------------------------------------------------------------------------------
+    // html helpers
+
+    function toggleFullScreen(element) {
+        if (isFullScreen())     { exitFullScreen(); }
+                        else    { requestFullScreen(element || document.documentElement); }
+    }
+
+    function createDocument(html, title) {
+        var doc = document.implementation.createHTMLDocument(title);
+        doc.body.innerHTML = html;
+        return doc;
+    }
+
+    function addElement(to, id, type='div') {
+        var e = document.createElement(type);
+        if(id) { e.id = id; }
+        to.appendChild(e);
+        return e;
+    }
+
+    function addNewElement(to, id, type='div') {
+        let e = document.getElementById(id);
+        if(!e) { e = addElement(to, id, type); }
+        return e;
+    }
+
+    function escapeHTML(string) { 
+        var pre = document.createElement('pre');
+        var text = document.createTextNode(string);
+        pre.appendChild(text);
+        return pre.innerHTML;
+    }
+
+    function escapeCode(string) { 
+        let s = string
+             .replace(/</g, "&lt;")
+             .replace(/>/g, "&gt;")
+             .replace(/"/g, "&quot;")
+             .replace(/'/g, "&#039;"); 
+        //console.log("orig = \n", string, "\nesc = \n", s);
+        return s;
+    }
+
+    function getAttrib(from, name) {
+        if(from && from.hasAttributes()) {
+            var attrs = from.attributes;
+            for(var i = 0; i < attrs.length; ++i) {
+                if(attrs[i].name == name) { return attrs[i].value; }
+            }
+        }
+        return null;
+    }
+
+    function findParentTag(s, tn) {
+        let p = s.parentNode;
+        while(p.tagName != tn.toUpperCase()) { p = p.parentNode; }
+        return p;
+    }
+
+    function clamp(min, v, max) {
+        return Math.min(Math.max(min, v), max);
+    }
+
+    function rjust(i, n, f = ' ') {
+        console.assert(f.length == 1, "fill char has to be exactly one character");
+        let s = i.toString();
+        return f.repeat(Math.max(0, n - s.length)) + s;
+    }
+
+    //---------------------------------------------------------------------------------------------
+    // app specific helpers
+
+    function isEmptyLine(line) { return (!line || /^\s*$/.test(line)); }
+    
+    //---------------------------------------------------------------------------------------------
+
+    const _Reveal_ListItem  = 1;
+    const _Highlight_Code   = 2;
+    const _Reveal_CustomTag = 3;
+    const _Reveal_CodePart  = 4;
+
+    function parseCode(code) {
+        function lineNo(show, no) {
+            if(!show) { return; }
+            return "<span class='__ch_ln'>" + rjust(no + 1, 2) + "</span>";
+        }
+
+        function tokenize(input, lang) {
+            // this does not do real tokenizing, it just does a rough splitting and a first pass 
+            // of identifying what kind of token we have. 
+            // it is also probably the worst way to tokenize
+
+            function make_token(content, type) { return { content: content, type: type }; }
+            function split(s, at) {
+                let p = s.search(at);
+                return { head: s.substring(0, p), tail: s.substring(p) };
+            }
+
+            let r = [];
+            let p = { head: '', tail: input };
+            let tokenCount = 0;                 // safety, prevent us from running forever in case
+            let tokenLimit = input.length+1;    // we can't handle the input correctly
+            while(p.tail != '' && tokenCount < tokenLimit) {
+                ++tokenCount;
+
+                p = split(p.tail, /\S|$/);
+                p.head  .split(/(\n)/)
+                        .filter(    function(t) { return t != '';} )
+                        .forEach(   function(t) { r.push(make_token(t, /\n/.test(t)
+                                                                       ? 'newline' : 'whitespace')); 
+                                                } 
+                                )
+                        ;
+
+                // Todo: Fix comments/string that do not have whitespace before their init token!
+
+                if (p.tail.startsWith('//')) {
+                    p.tail = p.tail.substring(2);
+                    p = split(p.tail, /\n|\/\//);
+                    p.head = '//' + p.head;
+                    r.push(make_token(p.head, 'comment')); 
+                    continue; 
+                }
+                // Todo: multi-line comments, strings and recursive comments
+                if (p.tail.startsWith('/*')) {
+                    p = split(p.tail, /\*\//);
+                    p.tail = p.tail.substring(2);
+                    r.push(make_token(p.head + '*/', 'comment')); 
+                    continue;                    
+                }
+                if (p.tail.startsWith('"')) {
+                    p.tail = p.tail.substring(1);
+                    p = split(p.tail, /"/);
+                    p.head = '"' + p.head + '"';
+                    p.tail = p.tail.substring(1);
+                    r.push(make_token(p.head, 'string')); 
+                    continue;                    
+                }           
+                p = split(p.tail, /\s|$/);
+                p.head  .split(/([^A-Za-z0-9_]+)/)
+                        .filter(    function(t) { return t != '';} )
+                        .forEach(   function(t) { r.push(make_token(t, /[^A-Za-z0-9_]+/.test(t)
+                                                                       ? 'special' : 'name')); 
+                                                } 
+                                )
+                        ;
+            } 
+            console.assert(tokenCount < tokenLimit, "tokenizer failed to yield sensible results");
+            return r;
+        }
+
+        function indexOf(m, v, arr, start) {
+            for (let i = start; i < arr.length; ++i) { if (arr[i][m] === v) { return i; } } 
+            return -1;
+        }
+
+        function adjustIndent(tok) {
+            function relevantWhitespaceLength(tp) {
+                if (tok[tp].type == 'whitespace') {
+                    if (tp < tok.length - 1 && tok[tp + 1].type != 'newline') { return tok[tp].content.length; }
+                    return Number.MAX_SAFE_INTEGER;
+                }
+                if (tok[tp].type != 'newline') { return 0; }
+                return Number.MAX_SAFE_INTEGER;
+            }
+
+            let tp = 0; 
+            let min_indent = Number.MAX_SAFE_INTEGER;
+            do { 
+                tp = indexOf('type', 'newline', tok, tp);
+                if (tp == -1 || tp >= tok.length - 1) { break; } ++tp;
+                min_indent = Math.min(min_indent, relevantWhitespaceLength(tp)); 
+            } while (tp != -1 || t >= tok.length);
+            tp = 0;
+            do { 
+                tp = indexOf('type', 'newline', tok, tp);
+                if (tp == -1 || tp >= tok.length - 1) { break; } ++tp;
+                if (tok[tp].type == 'whitespace') {
+                    tok[tp].content = tok[tp].content.substring(min_indent); 
+                }
+            } while (tp != -1 || t >= tok.length);
+
+            return tok;
+        }
+        
+        function isWS(tok)     { return tok.type == 'whitespace'; }
+        function isNl(tok)     { return tok.type == 'newline'; }
+        function isWsOrNl(tok) { return isWS(tok) || isNl(tok); } 
+
+        function trimEmptyLines(tok) { 
+            while(isWsOrNl(tok[tok.length-1])) { tok.pop(); }
+            while(isWsOrNl(tok[0]) && isWsOrNl(tok[1])) { tok.shift(); }
+        }
+
+        function styleCode(tok, lang, showLineNos = false) {
+
+            function processCpp(tok) {
+                const keywords = ["alignas", "alignof", "and", "and_eq", "asm", "atomic_cancel", "atomic_commit", "atomic_noexcept", "auto", "bitand", "bitor", "bool", "break", "case", "catch", "char", "char16_t", "char32_t", "class", "compl", "concept", "const", "constexpr", "const_cast", "continue", "decltype", "default", "delete", "do", "double", "dynamic_cast", "else", "enum", "explicit", "export", "extern", "false", "float", "for", "friend", "goto", "if", "import", "inline", "int", "long", "module", "mutable", "namespace", "new", "noexcept", "not", "not_eq", "nullptr", "operator", "or", "or_eq", "private", "protected", "public", "register", "reinterpret_cast", "requires", "return", "short", "signed", "sizeof", "static", "static_assert", "static_cast", "struct", "switch", "synchronized", "template", "this", "thread_local", "throw", "true", "try", "typedef", "typeid", "typename", "union", "unsigned", "using", "virtual", "void", "volatile", " wchar_t", " while", " xor", " xor_eq" ];
+                console.log("Processing cpp code", tok);
+
+                for (let i = 0; i < tok.length; ++i) {
+                    function next(x) { return Math.min(x + 1, tok.length - 1); }
+
+                    if(tok[i].type == 'special' && tok[i].content == '#') {
+                        let j = next(i);
+                        if(tok[j].type == 'whitespace') { j = next(j); }
+                        if(tok[j].type == 'name') {  
+                            for(let k = i; k <= j; ++k) {
+                                tok[k].type = 'preproc';
+                            }
+                            i = j;
+                            j = next(i);
+                            let inc = tok[i].content == 'include';
+                            console.log("i,j = ", i, j, tok[i], tok[j]);
+                            while(j < tok.length && tok[j].type != 'newline' && tok[j].type != 'comment') { // TODO: multiline macro
+                                if(tok[j].type != 'whitespace') { tok[j].type = inc ? 'inc_file' : 'preproc_param'; }
+                                ++j;
+                            }
+                        }
+                    }
+
+                    if(tok[i].type == 'name' && keywords.includes(tok[i].content)) { tok[i].type = 'keyword'; }
+                }
+
+                return tok;
+            }
+
+            if(lang == 'c++') { tok = processCpp(tok); }
+
+            let ln = 2; // we remove leading newlines, so we need to manually add the first line number
+            if(showLineNos) { tok.unshift({type: 'dummy', hlPre: "<span class='__ch_ln' data-chln=' 1'>", hlPost: "</span>", alt: " "}); }
+            let openRevealBlock = false;
+            for (let i = 0; i < tok.length; ++i) {
+                if (tok[i].type == 'newline') { 
+                    if(showLineNos) {
+                        tok[i].hlPre = "<span class='__ch_ln' data-chln='" + rjust(ln, 2) + "'>"; tok[i].hlPost = "</span>";
+                        tok[i].alt = " "; // if we leave this empty the formatting goes haywire
+                    }
+                    ++ln; 
+                }
+
+                const simpleTok = ['comment', 'string', 'keyword', 'preproc', 'preproc_param', 'inc_file'];
+                simpleTok.forEach(function(type) {
+                    if (tok[i].type == type) {
+                        tok[i].hlPre = "<span class='__ch_" + type + "'>"; tok[i].hlPost = "</span>";
+                    }
+                });
+
+                if(tok[i].type == 'reveal') {
+                    if(openRevealBlock) { tok[i].hlPre = "</span>"; }
+                    tok[i].hlPost = "<span class='__c_reveal'>";
+                    openRevealBlock = true;
+                }
+            }
+            if (openRevealBlock) { 
+                if(tok[tok.length-1].hlPost) { tok[tok.length-1].hlPost += "</span>"; }
+                                        else { tok[tok.length-1].hlPost =  "</span>"; }
+            }
+
+            return tok;
+        }
+
+        function calcHighlights(tok, ci) {
+            let r = { tok: tok, hl: [] };
+
+            let cln = 0;
+            let ao = 0;
+            for(let i = 0; i < tok.length; /* empty because sometimes we remove items */ ) {
+                if(tok[i].type == 'newline') { ++cln; }
+
+                if(tok[i].type == 'comment') {
+                    let hlind = /\((\-+\*|\*|\d+)\)/.exec(tok[i].content);
+                    if(hlind) {
+                        if(hlind[1] == '----*') {
+                            r.hl.push({"box": ci, "type": _Reveal_CodePart });
+                            tok[i] = { type: 'reveal' };    
+                        } else {
+                            if(hlind[1] != '*') { ao = hlind[1]; }
+                            r.hl.push({"box": ci, "line": cln, "type": _Highlight_Code, "order": ao++ });
+                            tok.splice(i, 1);
+                            continue; 
+                        }
+                    }
+                }
+
+                ++i;
+            }
+
+            function compare(lhs, rhs) { return lhs < rhs ? -1 : lhs > rhs ? 1 : 0}
+            r.hl.sort(function(lhs,rhs) { return compare(lhs.order, rhs.order); });
+
+            return r;
+        } 
+
+        let r = {   hl: [],
+                    processed: ""
+                };
+
+        console.log("-----------------------------");
+        if(code) {
+            if (code.length != 0) { r.hl.push({"box": 0, "line": "none"}); }
+            for(let ci = 0; ci < code.length; ++ci) {
+                console.log("Parsing code view #", ci);
+                let cic = code.item(ci);
+                let lang = getAttrib(cic, 'class');
+                let showLineNos = lang == 'c++';
+                let xmp = cic.getElementsByTagName('xmp').item(0);
+                let codeText = (xmp ? xmp : cic).innerHTML.toString();
+                console.log(codeText);
+                if(xmp) {
+                    cic.removeChild(xmp);
+                }
+                let escape = (lang == 'html') ? escapeHTML : escapeCode;
+
+                let tok = tokenize(codeText, lang);
+                //console.log("Tokens: ", tok);
+
+                tok = adjustIndent(tok);
+                trimEmptyLines(tok);
+
+                let hlt = calcHighlights(tok, ci);
+                hlt.hl.forEach(h => r.hl.push(h));
+                tok = hlt.tok;
+                tok = styleCode(tok, lang, showLineNos);
+
+                r.processed = tok.map(function(t) {
+                    let pt = '';
+
+                    if (t.alt)     { if (t.content) { pt += escape(t.content); } }
+                    if (t.hlPre)   { pt += t.hlPre; }
+                    if (t.alt)     { pt += t.alt;} else { if (t.content) { pt += escape(t.content); } } 
+                    if (t.hlPost)  { pt += t.hlPost; }
+                    return pt;
+                }).join('');
+                cic.innerHTML = r.processed;
+            }
+            // postpone showing code highlights for the first highlight on the slide
+            if(r.hl.length > 0 && r.hl[0].type == _Highlight_Code) { r.hl.unshift({"box": 0, "line": "none"}); } 
+        }
+        return r;
+    }
+
+    //---------------------------------------------------------------------------------------------
+
+    function Slide(rawSlide, no) {
+        this.raw = rawSlide;
+
+        var doc = createDocument(rawSlide, 'Slide #' + no);
+        
+        var r = parseCode(doc.getElementsByTagName('code'));
+        var li = doc.getElementsByTagName('li');
+        var all = doc.getElementsByTagName('*'); 
+
+        this.hl = [];
+        let cli = 0; let cci = 0; let cri = 0; let chno = 0; let ccrev = 0;
+        for(var i = 0; i < all.length; ++i) {
+            var e = all[i];
+            if(e.className == 'reveal') { this.hl.push({"type": _Reveal_CustomTag, "no": cri++}); }
+            if(e.tagName == 'LI') { this.hl.push({"type": _Reveal_ListItem, "no": cli++}); }
+            if(e.tagName == 'CODE') { 
+                let cb = r.hl.filter(function(chl) { return chl.box == cci; });
+                for(let chl of cb) {
+                    if(chl.type == _Reveal_CodePart) {
+                        this.hl.push({"type": _Reveal_CodePart, "no": ccrev++}); 
+                    } else {
+                        this.hl.push({"type": _Highlight_Code, "box": cci, "line": chl.line, "no": chno++} ); 
+                    }
+                }
+                ++cci;
+            }
+        }
+        this.steps = this.hl.length;
+        this.processed = doc.body.innerHTML.toString();
+
+        console.log("Slide #", no, ": ", " highlights: ", this.hl);
+    }
+
+    //---------------------------------------------------------------------------------------------
+    // Application
+
+    var app =   {   html: null,
+                    head: null,
+                    body: null,
+                    canvas: null,
+
+                    slides: [],
+                    titles: {},
+                    style: null,
+                    currentSlideNo: 0,
+                    shownSlideNo: -1,
+                    currentStepNo: 0,
+                    lastStepNo: -1,
+                    startTime: 0
+                };
+    
+    //---------------------------------------------------------------------------------------------
+    
+    app.init = function() {
+        var html = document.body.parentNode;
+
+        // save raw data
+        var s = document.body.getElementsByTagName("section");
+        console.log("Initializing ", s.length, " slide(s) ... ")
+        for(var i = 0; i < s.length; ++i) {
+            this.slides.push(new Slide(s.item(i).innerHTML.toString(), i));
+        }
+
+        this.style = document.styleSheets.item(0);
+        this.styleText = this.style.ownerNode.textContent;
+        this.titles.title = html.getElementsByTagName("title").item(0);
+        this.titles.header = document.body.getElementsByTagName("header").item(0);
+        this.titles.footer = document.body.getElementsByTagName("footer").item(0);
+
+        // clean slate
+        document.head.innerHTML = "";
+        document.body.innerHTML = "";
+
+        this.html = document.body.parentNode;
+        this.head = document.head;
+        this.body = document.body;
+
+        // create styled content
+        if (this.titles.title)  { this.head.appendChild(this.titles.title); }
+        if (this.style)         {   var style = addElement(this.html, null, 'style');
+                                    style.innerHTML = this.styleText; 
+                                }
+        if (this.titles.header) { this.body.appendChild(this.titles.header); }
+        this.canvas = addElement(document.body, "canvas");
+        if (this.titles.footer) {
+            let footer = this.body.appendChild(this.titles.footer);
+            let ft = footer.innerHTML;
+            footer.innerHTML = "";
+            let ftn = addElement(footer, '__internal_footer_text');
+            ftn.innerHTML = ft;
+            addElement(footer, '__internal_time')
+            addElement(footer, '__internal_page_number');
+        }
+    };
+
+    function getLineHeight(node) {
+        let height = -1;
+        if(node) { 
+            let r = addNewElement(node, '__internal_ruler');
+            r.innerHTML='text';
+            height = r.getBoundingClientRect().height;
+        } 
+        return height;        
+    }
+
+    function getLowerBorderPx() {
+        let ft = document.getElementsByTagName('footer').item(0);
+        if(ft) { return ft.getBoundingClientRect().top; }
+        return document.body.getBoundingClientRect().bottom;
+    }
+
+    function toggleId(elem, state1, state2) {
+        elem.id = (elem.id != state1) ? state1 : state2;
+    }
+
+    function zoomCode(codeNode) {
+        let pre = findParentTag(codeNode, 'pre');
+        if(pre) {
+            let ovl = document.getElementById('__internal_code_highlight_line');
+            if(ovl) { ovl.style.visibility="hidden"; }
+
+            pre.addEventListener( "webkitTransitionEnd"
+                                ,   function() { 
+                                        app.render_slide(); 
+                                    }, false
+                                );
+            toggleId(pre, "zoomed", "");
+        }
+    };
+
+
+    //---------------------------------------------------------------------------------------------
+
+    app.render_slide = function() {
+        let slide = app.slides[app.currentSlideNo];
+        if(app.currentSlideNo != app.shownSlideNo) {
+            app.canvas.style.visibility = "hidden";
+            app.canvas.innerHTML = slide.processed;
+        } 
+        let hl = slide.hl;
+
+        document.getElementById('__internal_page_number').innerHTML = (app.currentSlideNo + 1).toString() 
+                                                                    + " / " 
+                                                                    + app.slides.length.toString();
+
+        let code = app.canvas.getElementsByTagName('code');
+        for(let i = 0; i < code.length; ++i) {
+            let ccode = code.item(i);
+            let ccpre = findParentTag(ccode, 'pre');
+            if (ccpre) {
+                ccpre.ondblclick = function(ev) { zoomCode(ev.target); }
+
+                let t = ccpre.title.toString();
+                ccpre.innerHTML = !isEmptyLine(t)   ? t
+                                                    :   (ccpre.className != 'do')
+                                                        ?   (ccpre.className != 'donot')
+                                                            ? "Code:"
+                                                            : "Do Not:"
+                                                        : "Do:"
+                                                    ;
+                if (!ccpre.className) { ccpre.className = "__internal_normal_code"; }
+                // give code a frame to live in
+                let cd = addElement(ccpre, null);
+                cd.className = "__internal_code";
+                cd.appendChild(ccode);
+                cd.onscroll = function(ev) { 
+                    let ovl = document.getElementById('__internal_code_highlight_line');
+                    if(ovl) {
+                        let ot = parseInt(ovl.dataset.origTop);
+                        ovl.style.top = (ot - ev.target.scrollTop).toString() +"px";
+                    }
+                };
+
+                let cds = cd.getBoundingClientRect();
+                let b = getLowerBorderPx();
+                if(b <= cds.bottom) {
+                    cd.style.height = (b - cds.top - 10).toString() + "px"
+                }
+            }
+        }
+
+        let li = app.canvas.getElementsByTagName('li');
+        for(let i = 0; i < li.length; ++i) {
+            li.item(i).className = "hidden"; 
+        }
+
+        let cn = app.canvas.getElementsByClassName('code-note');
+        for(let i = 0; i < cn.length; ++i) {
+            cn.item(i).style.visibility = "hidden";
+            cn.item(i).style.position = "fixed";
+        }
+
+        let rev = app.canvas.getElementsByClassName('reveal');
+        for(let i = 0; i < rev.length; ++i) {
+            rev.item(i).style.visibility = "hidden";
+        }
+
+        let crev = app.canvas.getElementsByClassName('__c_reveal');
+        for(let i = 0; i < crev.length; ++i) {
+            crev.item(i).style.visibility = "hidden";
+        }
+
+        let ovl = document.getElementById('__internal_code_highlight_line');
+        if (ovl) {
+            ovl.style.visibility = "hidden";
+        }
+
+        if(hl.length > 0) {
+            for(let i = 0; i <= app.currentStepNo; ++i) {
+                if(hl[i].type == _Reveal_ListItem) {
+                    li.item(hl[i].no).className = (i < app.currentStepNo) ? "shadow" : "current";
+                }
+                if(hl[i].type == _Reveal_CustomTag) {
+                    rev.item(hl[i].no).style.visibility = "visible";
+                }
+                if(hl[i].type == _Reveal_CodePart) {
+                    crev.item(hl[i].no).style.visibility = "visible";
+                }
+            }    
+
+            // TOMBSTONE: not working: change zoom state if hl leaves zoomed in box
+            if (hl[app.currentStepNo].type == _Highlight_Code) {
+                let cb = hl[app.currentStepNo].box;
+                let no = hl[app.currentStepNo].no;
+                let lineNo = hl[app.currentStepNo].line;
+                console.assert(code && code.length > cb, "Did not find expected code nodes");
+                let clheight = getLineHeight(code.item(cb));
+                console.assert(clheight >= 0, "could not determine line height.");
+
+                let ovl = addNewElement(app.canvas, "__internal_code_highlight_line");
+                ovl.style.visibility = (lineNo=="none") ? "hidden" : "visible";
+                ovl.style.height = clheight.toString() + "px";
+                ovl.innerHTML = "";
+
+                let cbox = code.item(cb).parentNode;
+                let bbox = cbox.getBoundingClientRect();
+                // Todo: use proper padding
+                let ovltop = (bbox.top + 7) + (lineNo * clheight);
+                ovl.dataset.origTop = ovltop;
+                ovl.style.top       = ovltop            .toString() + "px";
+                ovl.style.left      = (bbox.left + 5)   .toString() + "px";
+                ovl.style.width     = (bbox.width - 10) .toString() + "px";
+
+                let scrollMax = cbox.scrollHeight - bbox.height;
+                if (scrollMax > 0) {
+                    let sreqMin = Math.max(0, ovltop + clheight - bbox.bottom);
+                    let addScroll = Math.min(4 * clheight, (bbox.height/3));
+                    let sreqMax = Math.max(0, ovltop + clheight + addScroll - bbox.bottom);
+                    
+                    if(sreqMax > 0) {
+                        cbox.scrollTop += clamp(0, sreqMax, scrollMax);; 
+                    }
+                }
+                let ccn = cn.item(no);
+                if(ccn) {
+                    ccn.style.visibility = "visible";
+                    ccn.style.position = "absolute";
+                }
+            }
+        }
+
+        if(app.currentSlideNo != app.shownSlideNo) {
+            app.shownSlideNo = app.currentSlideNo;
+            app.canvas.style.visibility = "visible";
+        }
+        app.lastStepNo = app.currentStepNo;
+    }
+
+    //---------------------------------------------------------------------------------------------
+
+    app.gotoPage = function(pn, startOfPage = true) {
+      app.currentSlideNo = clamp(0, pn, app.slides.length - 1);
+      app.currentStepNo = startOfPage ? 0 : app.slides[app.currentSlideNo].steps - 1;
+    }
+
+    app.gotoPagePrompt = function() {
+        let page = parseInt(window.prompt("Goto Slide:", app.slides.length.toString()));
+        if (page != NaN) { app.gotoPage(page-1); }
+    }
+
+    app.nextPage = function(startOfPage = true) { app.gotoPage(app.currentSlideNo + 1, startOfPage); }
+    app.prevPage = function(startOfPage = true) { app.gotoPage(app.currentSlideNo - 1, startOfPage); }
+    app.nextStep = function() {
+        app.currentStepNo++;
+        if (app.currentStepNo >= app.slides[app.currentSlideNo].steps) {
+            app.nextPage(app.currentSlideNo < app.slides.length - 1);
+        }
+    }
+    app.prevStep = function() {
+        app.currentStepNo--;
+        if (app.currentStepNo < 0) {
+            app.prevPage(app.currentSlideNo == 0) 
+        }
+    }
+
+    app.onkey = function(ev) {
+        if (ev.altKey || ev.ctrlKey || ev.metaKey || ev.shiftKey) { return; }
+        //console.log("pressed = ", ev.keyCode);
+        
+        ev.preventDefault();
+        if ( ev.keyCode == 33 /* pgup        */ )   { app.prevPage(); }
+        if ( ev.keyCode == 34 /* pgdown      */ )   { app.nextPage(false); }
+        if ( ev.keyCode == 38 /* up arrow    */ )   { app.prevPage(false); }
+        if ( ev.keyCode == 40 /* down arrow  */ )   { app.nextPage(); }
+        if ( ev.keyCode == 37 /* left arrow  */ )   { app.prevStep(); }
+        if ( ev.keyCode == 39 /* right arrow */ )   { app.nextStep(); }
+        if ( ev.keyCode == 70 /* 'f' */ )           { toggleFullScreen(document.html); }
+        if ( ev.keyCode == 71 /* 'g' */ )           { app.gotoPagePrompt(); }
+
+        app.render_slide();
+    }
+
+    app.resize = function() {
+        // re-render slide to keep all elements properly alligned
+        app.render_slide();
+    }
+
+    //---------------------------------------------------------------------------------------------
+
+    window.onload = function() {
+        app.init();
+        window.onkeydown = app.onkey.bind(app);
+        window.onresize = app.resize.bind(app);
+
+        app.startTime = new Date();
+        setInterval(function() {
+            let now = new Date();
+            let run = new Date(now - app.startTime);
+            let runs = ((run.getHours() == 1) ? ""  : (rjust(run.getHours()-1, 2, '0') + ":")) 
+                     + rjust(run.getMinutes(), 2, '0') + ":" + rjust(run.getSeconds(), 2, '0');
+            document.getElementById("__internal_time").innerHTML 
+                = now.toLocaleTimeString().slice(0,5) + " (" + runs + ")";
+        } 
+        , 1000);
+
+        app.render_slide();
+    }
+
+    //---------------------------------------------------------------------------------------------
+
+</script>
+
+<!--============================================================================================--> 
